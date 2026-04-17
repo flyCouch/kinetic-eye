@@ -1,0 +1,46 @@
+The Calibration Reference List
+1. Ultra Pure White (PPU18-06) * Role: The 100% Reflectance standard.
+
+RGB: 248, 248, 242
+
+HEX: #F8F8F2
+
+Task: Use this to calibrate the peak brightness of your COB LED.
+
+2. Classic Silver (PPU18-11) * Role: The 18% Neutral Grey standard.
+
+RGB: 186, 186, 182
+
+HEX: #BABAB6
+
+Task: The baseline for mid-tone exposure; helps Python avoid "sensor clipping."
+
+3. Cathedral Tree (S400-7) * Role: Botanical Green Proxy.
+
+RGB: 51, 70, 72 (Approximate based on "Thermal" S440-7 profile) * HEX: #334648
+
+Task: Mimics the absorption curve of chlorophyll to test plant-finding logic.
+
+4. Red My Mind (MQ1-10) * Role: Anthocyanin/Red Edge Proxy.
+
+RGB: 153, 67, 65
+
+HEX: #994341
+
+Task: Marks the "Red Edge" transition (700nm-750nm), crucial for health checks.
+
+5. Beluga (770F-7) * Role: The 0% Reflectance (Black) standard.
+
+RGB: 47, 47, 47
+
+HEX: #2F2F2F
+
+Task: Subtraction of "Dark Noise." Anything the sensor sees here is discarded as junk.
+
+# --- CALIBRATION SWATCH DATA ---
+# WHITE: PPU18-06 | #F8F8F2 | RGB(248,248,242)
+# GREY:  PPU18-11 | #BABAB6 | RGB(186,186,182)
+# GREEN: S400-7   | #334648 | RGB(51,70,72)
+# RED:   MQ1-10   | #994341 | RGB(153,67,65)
+# BLACK: 770F-7   | #2F2F2F | RGB(47,47,47)
+# ------------------------------
