@@ -14,7 +14,7 @@ import select
 import sys
 
 # --- CONFIG ---
-API_KEY = "2b10MpGAgubQ8SpxFa5ht8roee"
+API_KEY = "pl@ntnet"
 CAMERA_DIR = "/sdcard/DCIM/Camera/kinetic-eye"
 B_DIR = "/sdcard/kinetic-eye"
 D_PATH = os.path.join(B_DIR, "foraging_history.json")
