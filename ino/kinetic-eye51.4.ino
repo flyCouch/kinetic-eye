@@ -50,9 +50,9 @@ void runSpectralScan() {
   DataPoint point;
   uint8_t syncByte = 0xFF; // The "Anchor"
 
-  for (int r = 0; r <= 250; r += 5) {
-    for (int g = 0; g <= 250; g += 5) {
-      for (int b = 0; b <= 250; b += 5) {
+  for (int r = 0; r <= 250; r += 15) {
+    for (int g = 0; g <= 250; g += 15) {
+      for (int b = 0; b <= 250; b += 15) {
         analogWrite(RED_PIN, r);
         analogWrite(GREEN_PIN, g);
         analogWrite(BLUE_PIN, b);
