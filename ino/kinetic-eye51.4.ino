@@ -73,7 +73,7 @@ void runSpectralScan() {
         point.b = (uint8_t)b;
         point.val = (uint16_t)analogRead(SENSOR_PIN);
 
-        delay(1)
+        delay(1);
 
         // SEND SYNC BYTE THEN DATA
         SerialBT.write(syncByte);
